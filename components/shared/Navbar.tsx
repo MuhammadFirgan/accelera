@@ -29,12 +29,16 @@ export function Navbar() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">TV</span>
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                TechVision AI
-              </span>
+              <Image 
+                src="/images/logo3.png"
+                width={24}
+                height={24}
+                alt='logo'
+              />
+              
+              <span className="text-xl font-bold ">
+              Accelera
+            </span>
             </div>
           </div>
         </div>
@@ -62,7 +66,7 @@ export function Navbar() {
                 alt='logo'
               />
             </div>
-            <span className="text-xl font-bold text-[#007bff] bg-clip-text ">
+            <span className="text-xl font-bold ">
               Accelera
             </span>
           </div>
@@ -105,13 +109,27 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
+          <div
+            className="md:hidden 
+              bg-white/90 dark:bg-gray-900/30 
+              backdrop-blur-lg 
+              border border-gray-200 dark:border-gray-700/50 
+              shadow-lg 
+              rounded-lg 
+              mx-4 mt-2 
+              overflow-hidden"
+          >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 transition-colors duration-200 font-medium"
+                  className="block px-3 py-2 
+                    text-gray-700 hover:text-gray-900 
+                    dark:text-gray-300 dark:hover:text-white 
+                    transition-colors duration-200 
+                    font-medium
+                    rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
