@@ -1,7 +1,9 @@
-
+import { HeroSection } from "@/components/sections/HeroSection";
 
 export default function page() {
   return (
-    <div>page</div>
+    <section>
+      <HeroSection />
+    </section>
   )
 }
