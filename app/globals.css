@@ -120,3 +120,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.blue-primary {
+  @apply bg-[#007bff] text-white;
+}

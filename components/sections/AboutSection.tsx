@@ -36,11 +36,11 @@ export function AboutSection() {
         <div className="flex flex-col justify-center items-center w-full md:flex-row">
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute -top-40 -right-40 w-64 h-64 bg-gradient-to-r from-purple-400/30 to-blue-400/30 rounded-full blur-3xl animate-pulse hidden md:block"></div>
-                <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-gradient-to-r from-blue-400/30 to-indigo-400/30 rounded-full blur-3xl animate-pulse delay-1000 hidden md:block"></div>
+                <div className="absolute top-1/2 left-1/2 -translate-1/2 w-64 h-64 bg-gradient-to-r from-blue-400/30 to-indigo-400/30 rounded-full blur-3xl animate-pulse delay-1000 hidden md:block"></div>
             </div>
           <Image src="/images/about1.jpg" width={200} height={200} alt='about image' className='w-full md:w-1/2 h-[400px] aspect-video order-1 md:order-1'/>
           <div className='flex flex-col justify-center items-start gap-4 md:w-1/2 p-7 md:pl-5 order-2 md:order-2'>
-            <h1 className='text-4xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent'>Give me some heading text</h1>
+            <h1 className='text-4xl font-semibold bg-gradient-to-r from-purple-600 to-[#007bff] bg-clip-text text-transparent'>Give me some heading text</h1>
             <p className='leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ut corporis voluptates tempora hic, molestiae, tenetur deleniti commodi eius accusamus veniam voluptate mollitia, doloremque error natus doloribus omnis? Deleniti, assumenda!</p>
           </div>
           
@@ -49,7 +49,7 @@ export function AboutSection() {
         <div className="flex flex-col justify-center items-center w-full bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50 dark:from-purple-950/20 dark:via-blue-950/20 dark:to-indigo-950/20 md:flex-row">
         <Image src="/images/about2.jpg" width={200} height={200} alt='about image' className='w-full md:w-1/2 h-[400px] aspect-video order-1 md:order-2'/>  
           <div className='flex flex-col justify-center items-start md:pl-5 gap-4 md:w-1/2 p-7 order-2 md:order-1'>
-            <h1 className='text-4xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent'>Give me some heading text</h1>
+            <h1 className='text-4xl font-semibold bg-gradient-to-r from-purple-600 to-[#007bff] bg-clip-text text-transparent'>Give me some heading text</h1>
             <p className='leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ut corporis voluptates tempora hic, molestiae, tenetur deleniti commodi eius accusamus veniam voluptate mollitia, doloremque error natus doloribus omnis? Deleniti, assumenda!</p>
           </div>
           
