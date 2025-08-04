@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils';
 import { navItems } from '@/constans';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button } from '../ui/button';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,10 +36,9 @@ export function Navbar() {
                 height={24}
                 alt='logo'
               />
-              
-              <span className="text-xl font-bold ">
-              Accelera
-            </span>
+              <span className="text-xl font-bold">
+                Accelera
+              </span>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ export function Navbar() {
       className={cn(
         'fixed top-0 w-full z-50 transition-all duration-300',
         isScrolled
-          ? 'bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 backdrop-blur-md'
+          ? 'bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-700 backdrop-blur-lg'
           : 'bg-transparent'
       )}
     >
@@ -66,7 +66,7 @@ export function Navbar() {
                 alt='logo'
               />
             </div>
-            <span className="text-xl font-bold ">
+            <span className="text-xl font-bold">
               Accelera
             </span>
           </div>
@@ -82,28 +82,28 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <button
+            <Button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="ml-4 p-2"
             >
               {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </button>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-2">
-            <button
+            <Button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="p-2"
+              className="p-2 bg-transparent"
             >
-              {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </button>
-            <button
+              {theme === 'dark' ? <Sun className="h-5 w-5 text-black dark:text-white" /> : <Moon className="h-5 w-5 text-black dark:text-white" />}
+            </Button>
+            <Button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2"
+              className="p-2 bg-transparent"
             >
-              {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </button>
+              {isMobileMenuOpen ? <X className="h-5 w-5 text-black dark:text-white" /> : <Menu className="h-5 w-5 text-black dark:text-white" />}
+            </Button>
           </div>
         </div>
 
@@ -111,8 +111,8 @@ export function Navbar() {
         {isMobileMenuOpen && (
           <div
             className="md:hidden 
-              bg-white/90 dark:bg-gray-900/30 
-              backdrop-blur-lg 
+              bg-white/90 dark:bg-gray-900/90 
+           
               border border-gray-200 dark:border-gray-700/50 
               shadow-lg 
               rounded-lg 
