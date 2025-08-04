@@ -84,9 +84,9 @@ export function Navbar() {
             ))}
             <Button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="ml-4 p-2"
+              className="ml-4 p-2 bg-transparent"
             >
-              {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              {theme === 'dark' ? <Sun className="h-5 w-5 text-black dark:text-white" /> : <Moon className="h-5 w-5" />}
             </Button>
           </div>
 
