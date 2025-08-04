@@ -1,7 +1,8 @@
-import { HeroSection } from "@/components/sections/HeroSection";
+import { VisionMissionSection } from '@/components/sections/VMSection';
 import { AboutSection } from './../../components/sections/AboutSection';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { TeamSection } from '@/components/sections/TeamSection';
 
 export default function page() {
   return (
@@ -23,13 +24,13 @@ export default function page() {
           {/* <div className={`text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}> */}
           <div className='text-center transition-all duration-1000 opacity-100 translate-y-10'>
             <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 rounded-full mb-6 backdrop-blur-sm">
-              <span className="text-sm font-medium bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-sm font-medium bg-gradient-to-r from-purple-600 to-[#007bff] bg-clip-text text-transparent">
                 🚀 Leading the AI Revolution
               </span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-purple-600 via-[#007bff] to-indigo-600 bg-clip-text text-transparent">
                 Transforming Business
               </span>
               <br />
@@ -41,7 +42,7 @@ export default function page() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="group bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0">
+              <Button size="lg" className="group bg-gradient-to-r from-purple-600 to-[#007bff] hover:from-purple-700 hover:to-blue-700 text-white border-0">
                 Let's see the dream
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -53,6 +54,8 @@ export default function page() {
         </div>
       </div>
       <AboutSection />
+      <VisionMissionSection />
+      <TeamSection />
     </section>
   )
 }
