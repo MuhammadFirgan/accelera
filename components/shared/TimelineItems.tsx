@@ -53,7 +53,7 @@ export default function Timeline() {
                 index % 2 === 0 ? "right-[-0.375rem]" : "left-[-0.375rem]"
               }`}
             ></div>
-            {/* Details */}
+ 
             <div className="flex flex-col mb-2 px-5 py-3 gap-4">
               <span className="text-lg font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">{item.title}</span>
               <p className=" text-gray-600 dark:text-gray-100">{item.description}</p>
